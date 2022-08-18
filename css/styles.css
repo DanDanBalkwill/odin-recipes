@@ -1,8 +1,8 @@
-html {
+html { /* html styles */
     min-height: 100%;
     overflow-y: scroll;
   }
-body {
+body { /* body styles */
     min-height: 100%;
     background: #ad5389;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to top, #3c1053, #ad5389);  /* Chrome 10-25, Safari 5.1-6 */
@@ -11,7 +11,32 @@ body {
     color:white;
     font-family:Verdana, Helvetica, sans-serif;
     border: 1px solid transparent;
-    
+    background-attachment: fixed;    
+}
+a:link {    /* unvisited link */
+    color: white;
+    text-decoration: none;;
+}
+a:visited {    /* visited link */
+    color: white;
+}
+a:hover {    /* mouse over link */
+    color: #3c1053;
+    border-bottom: none;
+}
+a:active {    /* active link */
+    color: #ad5389;
+}
+.logoArea {
+    position: fixed;
+    top: 2%;
+}
+.logoArea > * {
+    display: inline-block;
+    vertical-align: top;
+}
+.logoAreaInner > * {
+    display: block;
 }
 #pageLogo {
     height: 150px;
@@ -21,38 +46,47 @@ body {
 }
 #imageLicense {
     font-size: x-small;
-    border-top: -10px;
     color: white;
 }
 .foodPic {
     height: auto;
     width: 300px;
-    display: inline-block;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.homeFoodPics > * {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.recipeLink {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
 }
 .h1 {
     color: white;
     text-shadow: 5px;
-    display: inline-block;
-    vertical-align: top;
-}
-.h1:link {
-    color: white;
-}
-.h1:visited {
-    color: white;
 }
 .h2 {
-    
+    text-align: center;
+}
+.recipeDescription {
+    text-align: center;
+}
+.thankMsg {
+    text-align: center;
+}
+.container {
+    width: 600px;
+    margin: 0 auto;
 }
 .nav {
-    left:0;
-    right:0;
-    margin:0;
-    position:absolute;
-}   
-#fixNav{
+    right: 0;
+    margin-right: 3%;
     position:fixed;
-    top:0px;
 }   
 .nav ul {
     list-style: none;
@@ -69,17 +103,9 @@ body {
 #recipeList {
     font-size: 18px;
 }
-a:link {    /* unvisited link */
-    color: white;
-    text-decoration: none;;
-}
-a:visited {    /* visited link */
-    color: white;
-}
-a:hover {    /* mouse over link */
-    color: #3c1053;
-    border-bottom: none;
-}
-a:active {    /* active link */
-    color: #ad5389;
+.footer {
+    position: absolute;
+    left: 10%;
+    width: auto;
+    font-size: x-small;
 }
